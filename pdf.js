@@ -19,6 +19,7 @@
 
 // Initializing PDFJS global object (if still undefined)
 PDFJS = {};
+PDFJS.disableWorker = true;
 // if (typeof PDFJS === 'undefined') {
 //   (typeof window !== 'undefined' ? window : this).PDFJS = {};
 // }
@@ -1656,8 +1657,8 @@ PDFJS.imageResourcesPath = (PDFJS.imageResourcesPath === undefined ?
  * to workers.
  * @var {boolean}
  */
-PDFJS.disableWorker = (PDFJS.disableWorker === undefined ?
-                       false : PDFJS.disableWorker);
+PDFJS.disableWorker = true; //(PDFJS.disableWorker === undefined ?
+                       //false : PDFJS.disableWorker);
 
 /**
  * Path and filename of the worker file. Required when the worker is enabled in

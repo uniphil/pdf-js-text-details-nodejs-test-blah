@@ -1,5 +1,6 @@
 
-var PDFJS = require('./pdf.js')
+var PDFJS = require('./pdf.js');
+// PDFJS.disableWorker = true;
 
 
 console.log('hello');
