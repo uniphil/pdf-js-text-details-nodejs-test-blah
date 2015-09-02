@@ -18,9 +18,13 @@
 /* globals PDFJS */
 
 // Initializing PDFJS global object (if still undefined)
-if (typeof PDFJS === 'undefined') {
-  (typeof window !== 'undefined' ? window : this).PDFJS = {};
-}
+PDFJS = {};
+// if (typeof PDFJS === 'undefined') {
+//   (typeof window !== 'undefined' ? window : this).PDFJS = {};
+// }
+
+// export for browserify
+module.exports = PDFJS;
 
 PDFJS.version = '1.1.215';
 PDFJS.build = 'c9a7498';
